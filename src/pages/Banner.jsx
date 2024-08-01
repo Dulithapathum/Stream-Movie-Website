@@ -38,7 +38,7 @@ export const Banner = () => {
   }, []);
 
   return (
-    <div className="relative max-w-[1200px] m-auto overflow-hidden">
+    <div className="relative max-w-[1200px] m-auto  overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
