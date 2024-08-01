@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { FaPlay } from "react-icons/fa";
 
 export const TopMovies = () => {
 const [topMovies,setTopMovies]=useState([])
@@ -22,17 +23,18 @@ useEffect(()=>{
 
 
   return (
-    <div className="w-[1200px] m-auto ">
-        <h1 className="text-yellow-300 font-semibold mt-8 text-3xl text-center uppercase">Top Movies</h1>
-        <center><hr className=" w-20  border-t-4 border-yellow-400 mt-2  " /></center>
+    <div className="w-[1200px] m-auto pb-8 ">
+        <h1 className="text-yellow-300 font-semibold mt-8 text-3xl text-center uppercase pb-8 ">Top Movies</h1>
+        
         <div className="flex w-full flex-wrap  justify-evenly">
-        {topMovies.slice(0, 14).map((movie)=>{
-            return <>
-            <div>
-                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-40" />
+        {topMovies.slice(0, 14).map((movie) => (
+          <div key={movie.id} className="w-40 relative group">
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-full" />
+            <div className="absolute inset-0 bg-[#01010166] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">     <FaPlay className="text-white text-4xl" />
+           
             </div>
-            </>
-        })}
+          </div>
+        ))}
         </div>
        
     </div>
