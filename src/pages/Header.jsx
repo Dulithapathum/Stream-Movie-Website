@@ -7,8 +7,8 @@ export const Header = () => {
   return (
     <div>
       <header className="w-[1400px] h-16 flex justify-between m-auto items-center">
-        <a href="/" className="text-[#EAE6DE] font-bold text-4xl">Prime Movies</a>
-        <ul className="flex gap-10 font-bold text-[#EAE6DE] text-xl">
+        <a href="/" className="text-[#EAE6DE] font-bold text-4xl bg-blue-500 p-1 rounded-sm">Prime Movies</a>
+        <ul className="flex gap-10 font-bold text-[#EAE6DE] text-lg  uppercase">
           {NavListdata.map((nav) => (
             <NavListitem key={nav.id} nav={nav} />
           ))}
