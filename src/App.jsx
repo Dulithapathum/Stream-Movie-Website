@@ -1,5 +1,6 @@
 import Banner from "./pages/Banner";
 import { Header } from "./pages/Header";
+import { NowPlaingMovies } from "./pages/NowPlaingMovies";
 import { TopMovies } from "./pages/TopMovies";
 
 const App = () => (
@@ -7,6 +8,7 @@ const App = () => (
     <Header />
     <Banner />
     <TopMovies/>
+    <NowPlaingMovies/>
   </div>
 );
 
