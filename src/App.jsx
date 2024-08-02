@@ -1,6 +1,7 @@
 import Banner from "./pages/Banner";
 import { Header } from "./pages/Header";
 import { NowPlaingMovies } from "./pages/NowPlaingMovies";
+import { PopulerTvSerious } from "./pages/PopulerTvSerious";
 import { TopMovies } from "./pages/TopMovies";
 
 const App = () => (
@@ -9,6 +10,7 @@ const App = () => (
     <Banner />
     <TopMovies/>
     <NowPlaingMovies/>
+    <PopulerTvSerious/>
   </div>
 );
 
